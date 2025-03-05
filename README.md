@@ -56,6 +56,12 @@ the University of Waterloo. He does Software Engineering and ML research.
 
 ^It extracts the above information by going directly to my website!
 
+## How does it get this?
+
+> The RAG system works by first searching the web for relevant information using DuckDuckGo, then retrieving and processing the content. It uses vector embeddings to find the most similar content to your query, and finally generates a response using the DeepSeek Coder 1.3B model.
+>
+> This approach allows the system to provide up-to-date information from the web while leveraging the language capabilities of the DeepSeek model to create coherent, informative responses.
+>
 ## Requirements
 
 - Python 3.8+
