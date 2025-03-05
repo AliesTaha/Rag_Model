@@ -17,6 +17,22 @@ This project implements a RAG system that:
 9. Passes retrieved content to the LLM
 10. Generates a comprehensive response based on the retrieved context
 
+To see an exmample of embedding
+
+```py
+from langchain.embeddings import HuggingFaceEmbeddings
+
+# Initialize the embedding model
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+# Generate embeddings for text
+text = "This is a sample sentence for embedding."
+text_embedding = embeddings.embed_query(text)
+# The result is a vector (list of numbers)
+```
+
+[0.01929548569023609, 0.01642497442662716, 0.07273904979228973, ...]
+
 ## Features
 
 - Web search integration with DuckDuckGo
