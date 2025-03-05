@@ -17,6 +17,8 @@ This project implements a RAG system that:
 9. Passes retrieved content to the LLM
 10. Generates a comprehensive response based on the retrieved context
 
+### Embedding
+
 To see an exmample of embedding
 
 ```py
@@ -32,6 +34,58 @@ text_embedding = embeddings.embed_query(text)
 ```
 
 [0.01929548569023609, 0.01642497442662716, 0.07273904979228973, ...]
+
+### FAISS
+
+FAISS is a library developed by Facebook AI Research for efficient similarity search and clustering of dense vectors.
+It allows for quick retrieval of vectors that are similar to a query vector.
+
+```py
+# Create a FAISS index
+index = faiss.IndexFlatL2(dimension)  # L2 distance (Euclidean)
+index.add(vectors)  # Add vectors to the index
+```
+
+Would output:
+> Indices of 5 nearest neighbors: [[381 503  88 359 140]]
+
+### FAISS Vector Store
+
+A FAISS Vector Store integrates FAISS with document storage, allowing you to store document embeddings and retrieve
+them efficiently based on similarity.
+
+### Retreiver
+
+A retriever is a component that fetches relevant documents from a data source based on a query. It acts as an interface between the query and the document store.
+
+```py
+from langchain.vectorstores import FAISS
+from langchain.embeddings import HuggingFaceEmbeddings
+
+# Load the saved vector store
+embeddings = HuggingFaceEmbeddings()
+# Setting allow_dangerous_deserialization to True
+vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)  
+
+# Convert vector store into a retriever
+retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+
+# Retrieve relevant documents for a query
+query = "What is LangChain?"
+retrieved_docs = retriever.get_relevant_documents(query)
+```
+
+Would output
+> Content: LangChain is a framework for developing applications powered by language models.
+> Source: docs
+
+### QA Pipeline Querying Retriever
+
+When a QA pipeline queries a retriever, it:
+Takes the user's question
+Passes it to the retriever to fetch relevant documents
+Combines these documents with the question in a prompt for the LLM
+Returns the LLM's response based on the retrieved context
 
 ## Features
 
