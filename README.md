@@ -26,21 +26,34 @@ Asking DeepSeek about DeepSeek
 - Question: What is the latest on DeepSeek models?
 
 ```
-- Helpful Answer: DeepSeek has released several new models, including DeepSeek-V3, DeepSeek-R1, and DeepSeek Coder. 
-These models are designed to perform better and more efficiently than their rivals, and they 
-are all open source. They are available for free to use.
+- Helpful Answer: DeepSeek has released several new models, 
+including DeepSeek-V3, DeepSeek-R1, and DeepSeek Coder. 
+These models are designed to perform better and more 
+efficiently than their rivals, and they are all open source. 
+They are available for free to use.
 ```
 
 - Question: Who is Professor En-Hui Yang
 
 ```
-Extracted Response: Professor En-Hui Yang is a faculty member in the Department of Electrical and Computer Engineering at the University of Waterloo since June 1997. He is a former Tier 1 Canada Research Chair holder in Information Theory and Multimedia Data Compression. He is the founding director of the Leitch-University of Waterloo multimedia communications lab, a co-founder of SlipStream Data Inc. (now a subsidiary of BlackBerry (formerly Research In Motion)), and the founder of BicDroid Inc. He currently serves as an Executive Council Member of the China Overseas Friendship Association, an Expert Advisor for the Overseas Chinese Affairs Office of the State Council of China, a member of IEEE Founders Medal Committee, and an advisor for other national and provincial bodies.
+Extracted Response: Professor En-Hui Yang is a faculty member in the 
+Department of Electrical and Computer Engineering at the University 
+of Waterloo since June 1997. He is a former Tier 1 Canada Research Chair 
+holder in Information Theory and Multimedia Data Compression. He is the 
+founding director of the Leitch-University of Waterloo multimedia communications 
+lab, a co-founder of SlipStream Data Inc. (now a subsidiary of BlackBerry 
+(formerly Research In Motion)), and the founder of BicDroid Inc. He currently 
+serves as an Executive Council Member of the China Overseas Friendship 
+Association, an Expert Advisor for the Overseas Chinese Affairs Office of the 
+State Council of China, a member of IEEE Founders Medal Committee, and an 
+advisor for other national and provincial bodies.
 ```
 
 - Question: Who is Waterloo student Ali Taha
 
 ```
-Extracted Response: Ali Taha is a 3rd-year Computer Engineering student at the University of Waterloo. He is focused on Software Engineering and Machine Learning research.
+Extracted Response: Ali Taha is a 3rd-year Computer Engineering student at 
+the University of Waterloo. He is focused on Software Engineering and Machine Learning research.
 ```
 
 ^It extracts the above information by going directly to my website!
