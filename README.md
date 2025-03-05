@@ -26,7 +26,8 @@ Asking DeepSeek about DeepSeek
 - Question: What is the latest on DeepSeek models?
 
 ```
-- Helpful Answer: DeepSeek has released several new models, including DeepSeek-V3, DeepSeek-R1, and DeepSeek Coder. These models are designed to perform better and more efficiently than their rivals, and they 
+- Helpful Answer: DeepSeek has released several new models, including DeepSeek-V3, DeepSeek-R1, and DeepSeek Coder. 
+These models are designed to perform better and more efficiently than their rivals, and they 
 are all open source. They are available for free to use.
 ```
 
@@ -37,6 +38,12 @@ Extracted Response: Professor En-Hui Yang is a faculty member in the Department 
 ```
 
 - Question: Who is Waterloo student Ali Taha
+
+```
+Extracted Response: Ali Taha is a 3rd-year Computer Engineering student at the University of Waterloo. He is focused on Software Engineering and Machine Learning research.
+```
+
+^It extracts the above information by going directly to my website!
 
 ## Requirements
 
