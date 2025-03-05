@@ -17,6 +17,8 @@ This project implements a RAG system that:
 9. Passes retrieved content to the LLM
 10. Generates a comprehensive response based on the retrieved context
 
+## Vocabulary
+
 ### Embedding
 
 To see an exmample of embedding
