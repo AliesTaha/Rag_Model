@@ -8,8 +8,14 @@ This project implements a RAG system that:
 
 1. Takes a user query
 2. Searches the web for relevant information using DuckDuckGo
-3. Processes the retrieved content using DeepSeek Coder (1.3B instruct model)
-4. Generates a comprehensive response based on the retrieved context
+3. Extracts URLs from the search results
+4. Scrapes webpage with Langchain WebBaseLoader
+5. Embeds scraped document using HuggingFace Embeddings
+6. Stores embedding in a FAISS (Facebook AI Similarity Search)
+7. Converts FAISS vector into a retriever to fetch documents
+8. Constructs QA pipeline that queries retreiver to fetch relevant document chunks
+9. Passes retrieved content to the LLM
+10. Generates a comprehensive response based on the retrieved context
 
 ## Features
 
@@ -72,7 +78,8 @@ Searching for: Who is Professor En Hui Yang?
 --------------------------------------------------
 Search results:
 [{'title': 'En-Hui Yang | Electrical and Computer Engineering - University of Waterloo', 
-'href': 'https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang'}, ...]
+'href': 'https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang'}, 
+'href': 'https://uwaterloo.ca/multicom-research-group/research-team/about-director'...]
 
 --------------------------------------------------
 URLs extracted:
