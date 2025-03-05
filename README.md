@@ -21,8 +21,6 @@ This project implements a RAG system that:
 
 ## Demo
 
-Asking DeepSeek about DeepSeek
-
 - Question: What is the latest on DeepSeek models?
 
 ```
