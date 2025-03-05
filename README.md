@@ -9,7 +9,7 @@ This project implements a RAG system that:
 1. Takes a user query
 2. Searches the web for relevant information using DuckDuckGo
 3. Extracts URLs from the search results
-4. Scrapes webpage with Langchain WebBaseLoader
+4. Scrapes webpage with Langchain WebBaseLoader -> LangChain helps connect AI to real-world knowledge
 5. Embeds scraped document using HuggingFace Embeddings
 6. Stores embedding in a FAISS (Facebook AI Similarity Search)
 7. Converts FAISS vector into a retriever to fetch documents
