@@ -53,7 +53,7 @@ advisor for other national and provincial bodies.
 
 ```
 Extracted Response: Ali Taha is a 3rd-year Computer Engineering student at 
-the University of Waterloo. He is focused on Software Engineering and Machine Learning research.
+the University of Waterloo. He does Software Engineering and ML research.
 ```
 
 ^It extracts the above information by going directly to my website!
